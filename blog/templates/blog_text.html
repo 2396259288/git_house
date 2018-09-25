@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		h5{
+			margin-left: 600px;
+		}
+		div{
+			width: 700px;
+			margin: 0 25%;
+		}
+		pre{
+  			white-space: pre-wrap;
+  			word-wrap: break-word;
+  			width: 700px;
+  			font-size: 16px;
+  		}
+	</style>
+</head>
+<body>
+	<div>
+		<h1>{{ blog.title }}</h1>
+		<h5>{{ blog.date }}</h5>
+		<img src="{{ blog.image.url }}" height="300px%" width=""><br>
+		<pre>{{ blog.text }}</pre>
+	</div>
+</body>
+</html>

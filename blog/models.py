@@ -13,3 +13,5 @@ class Blog(models.Model):
     	return self.title
        
 
+    def summary(self):
+    	return self.text[:50] + '>>>'
